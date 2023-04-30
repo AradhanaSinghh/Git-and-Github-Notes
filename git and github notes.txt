@@ -1,0 +1,63 @@
+git:- it is a version control system
+it is basically used to save the history of the files
+
+GitHub is a code hosting platform for collaboration and version control.
+GitHub lets you (and others) work together on projects.
+
+git --version --> check the version //if you are getting any error check 
+it and correct it.
+------------------------------------------------------------------------
+
+let's start learning git with vscode!
+
+1)git init -- used in initalizing an existing directory as git repository
+2)Seeting your info.
+  i)git config --global user.name "setting your name"
+  ii)git config --global user.email "setting your email"
+3) git config --global --edit :- used to edit your details which
+you can further save by typing :wq.
+4)git status --tells the status of repo
+5)git add first.html
+6) staging area
+we add files in staging area and then we commit it
+7) git commit -m "initial commit" --to commit your files.
+** if you ignore -m then it will redirect you to vim.
+8) git log -- to check previous history of and commit of logs.
+9) how to visit your commits?
+** checkout -> git checkout hashcode
+10) branch -> to distribute features to contributers 
+**you can create multiple branches
+git branch navbar --> creation of navbar branch 
+git checkout navbar --> going to navbar branch
+***a way to write this all in a line
+git checkout -b aradhana/about
+-----------------------------------
+after this you can add files in this branch
+and commit it further
+----------------------------------
+after that switch to the navbar branch or the branch you previously
+created 
+**observe that the files you created in aradhana/about will not be there
+**how can we merge the files in aradhana/about branch to navbar branch?
+--by using git merge aradhana/about 
+----------------------------------
+.gitignore --> it is a place where you can place all you confidential 
+files so that the end user could not read it.
+
+--> simply add the files you want to ignore in .gitignore 
+directly to vs code.
+---------------------------------
+
+GITHUB:-
+-------
+creation of a repository 
+1) Create a github account
+2) Go to Add a repository 
+--->Give it a name,desciption make it public or private 
+according to your wish,
+3) copy the cli code mentioned below the interface and paste it one
+by one into git bash
+
+**congrats! your github repository is uploaded if you want to commit
+the changes then just adjust the changes and commit it to bash and then 
+just write git push.
